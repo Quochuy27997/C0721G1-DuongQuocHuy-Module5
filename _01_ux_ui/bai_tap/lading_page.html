@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.0/mdb.min.css" rel="stylesheet" />
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.0/mdb.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+                <!-- Container wrapper -->
+                <div class="container-fluid" style="background-color: #272882;">
+                    <!-- Toggle button -->
+                    <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+                        data-mdb-target="#navbarCenteredExample" aria-controls="navbarCenteredExample"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-bars"></i>
+                    </button>
+
+                    <!-- Collapsible wrapper -->
+                    <div class="collapse navbar-collapse justify-content-center row" id="navbarCenteredExample">
+
+                        <div class="col-5">
+                            <div> <a class="nav-link active" aria-current="page" href="#"><img
+                                        src="https://codegym.vn/wp-content/uploads/2017/03/CodeGym-3-02-copy.jpg"
+                                        style="width: 400px; height: 50px;" alt=""></a>
+                            </div>
+
+                        </div>
+
+                        <!-- Left links -->
+                        <div class="col-7">
+
+                            <ul class="navbar-nav mb-2 mb-lg-0 row">
+                                <!-- <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#"><img
+                                        src="https://codegym.vn/wp-content/uploads/2017/03/CodeGym-3-02-copy.jpg"
+                                        style="width: 500px; height: 50px;" alt=""></a>
+                            </li> -->
+                                <!-- Navbar dropdown -->
+                                <li class="nav-item dropdown col-2">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-mdb-toggle="dropdown" aria-expanded="false" style="color: aliceblue;">
+                                        Khoá Học
+                                    </a>
+                                    <!-- Dropdown menu -->
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li>
+                                            <a class="dropdown-item" href="#">Action</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider" />
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <!-- Navbar dropdown -->
+                                <li class="nav-item dropdown col-2">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-mdb-toggle="dropdown" aria-expanded="false" style="color: aliceblue;">
+                                        Trung Tâm
+                                    </a>
+                                    <!-- Dropdown menu -->
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li>
+                                            <a class="dropdown-item" href="#">Action</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider" />
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <!-- Navbar dropdown -->
+                                <li class="nav-item dropdown col-2">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-mdb-toggle="dropdown" aria-expanded="false" style="color: aliceblue;">
+                                        Blog
+                                    </a>
+                                    <!-- Dropdown menu -->
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li>
+                                            <a class="dropdown-item" href="#">Action</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider" />
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item col-2">
+                                    <a class="nav-link" href="#" style="color: aliceblue;">Tin Tức</a>
+                                </li>
+                                <!-- Navbar dropdown -->
+                                <li class="nav-item dropdown col-2">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-mdb-toggle="dropdown" aria-expanded="false" style="color: aliceblue;">
+                                        Giới thiệu
+                                    </a>
+                                    <!-- Dropdown menu -->
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li>
+                                            <a class="dropdown-item" href="#">Action</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider" />
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item col-2">
+                                    <a style="color: aliceblue;" class="nav-link" href="#"> <i
+                                            class="fas fa-search"></i></a>
+                                </li>
+
+                                <!-- <li class="nav-item">
+                    <a class="nav-link disabled"
+                      >Disabled</a
+                    >
+                  </li> -->
+                            </ul>
+                        </div>
+                        <!-- Left links -->
+                    </div>
+                    <!-- Collapsible wrapper -->
+                </div>
+                <!-- Container wrapper -->
+            </nav>
+        </div>
+        <div
+            style="background-image: url(https://codegym.vn/wp-content/uploads/2018/07/office_2.png); width: 100%; height: 400px;">
+            <div>
+                <h2 style=" color: aliceblue; padding-top: 200px;  padding-left: 140px;">
+                    TRỞ THÀNH LẬP TRÌNH VIÊN FULL-STACK CHỈ SAU 5 THÁNG</h2>
+                <p
+                    style=" color: aliceblue; padding-left: 140px; padding-right: 140px; text-align: justify; font-size: 100%; font-family: 'Montserrat',Helvetica,Arial,Lucida,sans-serif;;">
+                    CodeGym Career là chương trình đào tạo lập trình viên hiện đại, vững tay nghề theo mô hình Coding
+                    Bootcamp dành cho người bắt đầu từ con số 0, các bạn sinh viên CNTT, sinh viên ngành khác, những
+                    người
+                    đang làm ngành/nghề khác muốn chuyển hướng theo đuổi nghề lập trình.
+                </p>
+            </div>
+        </div>
+        <div>
+            <h2 style="text-align: center; padding-top: 100px;">TỔNG QUAN CHƯƠNG TRÌNH</h2>
+            <p style="padding-left: 140px; padding-right: 140px;">Chương trình CodeGym Career tại CodeGym cung cấp giải
+                pháp đào tạo lập trình viên chuyên nghiệp, huấn luyện thực chiến trong thời gian ngắn, thực hành liên
+                tục và cường độ cao. Học viên sẽ thành thạo các kỹ thuật lập trình với các ngôn ngữ JavaScript, Java,
+                PHP và Typescript, tham gia vào các nhóm dự án theo mô hình Scrum và sử dụng các kỹ thuật Agile thông
+                dụng. Hoàn thành chương trình, học viên CodeGym có thể đảm nhận ngay vị trí lập trình viên full-stack
+                tại các công ty.</p>
+        </div>
+        <div style="padding-left: 140px; padding-right: 140px; padding-top: 100px;"><iframe width="1100" height="600"
+                src="https://www.youtube.com/embed/pDOD7gAGM6g" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe></div>
+
+        <div style="padding-left: 80px; padding-right: 80px; background-color: #EEEEEE;">
+            <div class="row text-center" style="color:orangered">
+                <div class="col-4">
+                    <p style="font-size: xx-large"><i class="far fa-edit"></i></p>
+                    <h4 style="color: black;">Sự nghiệp bắt đầu ngay từ ngày đầu tiên</h4>
+                    <p style="color: black; text-align: left; ">Sự nghiệp trở thành lập trình viên full-stack sẽ bắt đầu
+                        ngay từ ngày đầu tiên. Học viên giống như là nhân viên tập sự tại CodeGym, tuân thủ các quy định
+                        về
+                        kỷ luật và văn hoá của CodeGym. Trong vòng 20 tuần, CodeGym giúp bạn trở thành lập trình viên có
+                        đầy
+                        đủ các kỹ năng quan trọng để phát triển sự nghiệp lâu dài.</p>
+                </div>
+                <div class="col-4">
+                    <p style="font-size: xx-large"><i class="fas fa-user-friends"></i></p>
+                    <h4 style="color: black;">Bạn nhận được tương ứng những gì bạn bỏ ra</h4>
+                    <p style="color: black; text-align: left; ">Để đạt được mục tiêu, học viên CodeGym được kỳ vọng dành
+                        ít
+                        nhất 70h mỗi tuần cho chương trình. Các học viên thành công nhất thường dành tới 90h/tuần. Học
+                        viên
+                        của CodeGym thường nói rằng, chương trình Coding Bootcamp là điều khó khăn nhất nhưng đáng giá
+                        nhất
+                        mà họ từng thực hiện.</p>
+                </div>
+                <div class="col-4">
+                    <p style="font-size: xx-large"><i class="fas fa-city"></i></p>
+                    <h4 style="color: black;">Trải nghiệm doanh nghiệp</h4>
+                    <p style="color: black; text-align: left; ">Chương trình của CodeGym được thiết kế cô đọng và chọn
+                        lọc
+                        các nội dung thiết yếu, đáp ứng yêu cầu của doanh nghiệp. CodeGym tổ chức thường xuyên các
+                        seminar,
+                        techtalk với doanh nghiệp và các chuyến tham quan doanh nghiệp dành cho học viên. Cuối mỗi khóa
+                        học,
+                        các doanh nghiệp sẽ tham gia phiên phỏng vấn để đánh giá năng lực và tuyển dụng học viên.</p>
+                </div>
+            </div>
+
+            <div class="row text-center" style="color:orangered">
+                <div class="col-4">
+                    <p style="font-size: xx-large"><i class="far fa-edit"></i></p>
+                    <h4 style="color: black;">Thực chiến: Học thông qua làm</h4>
+                    <p style="color: black; text-align: left; ">Học viên sẽ bắt đầu lập trình từ ngày đầu tiên tại
+                        CodeGym.
+                        Chương trình học được cá nhân hoá trong môi trường học tập sáng tạo, với cường độ cao và nhịp độ
+                        nhanh, làm sản phẩm thực, thúc đẩy sự hợp tác thông qua lập trình cặp trong các giờ thực hành.
+                    </p>
+                </div>
+                <div class="col-4">
+                    <p style="font-size: xx-large"><i class="fas fa-user-friends"></i></p>
+                    <h4 style="color: black;">Hỗ trợ tối đa</h4>
+                    <p style="color: black; text-align: left; ">Đội ngũ giảng viên, tutor kinh nghiệm của CodeGym hướng
+                        dẫn,
+                        hỗ trợ học viên liên tục, giúp học viên nhanh chóng cải thiện và nâng cao chất lượng chương
+                        trình
+                        phần mềm. Kết thúc chương trình, học viên tìm việc với sự hỗ trợ và cam kết của CodeGym.</p>
+                </div>
+                <div class="col-4">
+                    <p style="font-size: xx-large"><i class="fas fa-city"></i></p>
+                    <h4 style="color: black;">Công nghệ giáo dục</h4>
+                    <p style="color: black; text-align: left; ">CodeGym nghiên cứu và áp dụng các phương pháp dạy và học
+                        hiệu quả nhất: Học tập qua dự án (Project-based learning) và Học tập đảo ngược (Flipped
+                        learning).
+                        Học viên được trang bị kỹ năng học tập suốt đời, kỹ năng làm việc và phát triển nghề nghiệp.
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center;">
+            <h2>LỘ TRÌNH HỌC THEO MÔ HÌNH CODING BOOTCAMP</h2>
+            <img src="https://i2.wp.com/codegym.vn/wp-content/uploads/2019/11/Lộ-trình-học-tập-49.png?w=1080&amp;ssl=1"
+                alt="" title="" data-recalc-dims="1" class="jetpack-lazy-image jetpack-lazy-image--handled"
+                data-lazy-loaded="1" loading="eager">
+        </div>
+        <div style="padding-left: 140px; padding-right: 140px; ">
+            <div class="row text-center" style="color:orangered">
+                <div class="col-6">
+                    <p style="font-size: xx-large"><i class="far fa-edit"></i></p>
+                    <h4 style="color: black;">Đánh giá năng lực</h4>
+                    <p style="color: black; text-align: left; ">Việc đánh giá được thực hiện liên tục trong quá trình
+                        học
+                        của học viên, cuối mỗi module và cuối chương trình Coding Bootcamp nhằm đảm bảo cung cấp đầy đủ
+                        nhất
+                        các phản hồi đến học viên và nhanh chóng điều chỉnh lộ trình học tập một cách phù hợp.
+                    </p>
+                </div>
+                <div class="col-6">
+                    <p style="font-size: xx-large"><i class="fas fa-user-friends"></i></p>
+                    <h4 style="color: black;">Dự án</h4>
+                    <p style="color: black; text-align: left; ">Học viên có 2 tuần full-time để xây dựng 1 ứng dụng thực
+                        tế
+                        thông qua việc tham gia vào các nhóm phát triển phần mềm theo mô hình Scrum và sử dụng các kỹ
+                        thuật
+                        Agile thông dụng.</p>
+                </div>
+            </div>
+        </div>
+        <div style="padding-left: 140px; padding-right: 130px; ">
+            <div class="row text-center" style="color:orangered">
+                <div class="col-12">
+                    <p style="font-size: xx-large"><i class="far fa-edit"></i></p>
+                    <h4 style="color: black;">Dịch vụ việc làm tại CodeGym</h4>
+                    <p style="color: black; text-align: left; ">CodeGym cung cấp dịch vụ việc làm để giúp bạn hoàn thành
+                        mục tiêu nghề nghiệp. Bạn sẽ tham gia vào các hoạt động chuẩn bị cho việc ứng tuyển vào các
+                        doanh nghiệp phần mềm và xây dựng lộ trình phát triển lâu dài cho cá nhân. Ví dụ như các buổi tư
+                        vấn trực tiếp với cố vấn nghề nghiệp, các workshop/seminar, các buổi Hiring Day phỏng vấn trực
+                        tiếp với doanh nghiệp và hơn thế nữa. CodeGym cam kết hoàn 100% học phí nếu bạn không nhận được
+                        việc làm trong vòng 45 ngày kể từ khi tốt nghiệp.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div style="padding-left: 140px; padding-right: 140px; ">
+            <div class="row text-center" style="color:orangered">
+                <div class="col-6">
+                    <!-- <p style="font-size: xx-large"><i class="far fa-edit"></i></p> -->
+                    <h4 style="color: black;">Phát triển nghề nghiệp</h4>
+                    <p style="color: black; text-align: left; ">Tham gia vào các hội thảo và sinh hoạt chuyên đề trực
+                        tiếp hoặc trực tuyến. Chúng tôi sẽ đề cập đến các chủ đề như kỹ thuật phỏng vấn, thương lượng
+                        lương, kỹ năng làm việc tại doanh nghiệp,…
+                    </p>
+                </div>
+                <div class="col-6">
+                    <!-- <p style="font-size: xx-large"><i class="fas fa-user-friends"></i></p> -->
+                    <h4 style="color: black;">Tư vấn nghề nghiệp 1-1</h4>
+                    <p style="color: black; text-align: left; ">Đặt lịch tư vấn lộ trình sự nghiệp với cố vấn nghề
+                        nghiệp của CodeGym. Chúng tôi sẽ cung cấp các phản hồi và hỗ trợ để nâng cao triển vọng phát
+                        triển nghề nghiệp của bạn.</p>
+                </div>
+            </div>
+        </div>
+        <div style="padding-left: 140px; padding-right: 140px; padding-top: 50px; background-color: #EEEEEE;">
+            <h2 style="text-align: center;">Ứng tuyển nhận việc</h2>
+            <div class="row text-center" style="color:orangered">
+
+                <table>
+                    <tr>
+                        <th>
+                            <p style="font-size: xx-large"><i class="fas fa-code-branch"></i></p>
+                            <h6 style="color: black;">1. Tinh chỉnh kỹ năng</h6>
+                        </th>
+                        <th>
+                            <p style="font-size: xx-large"><i class="fas fa-briefcase"></i></p>
+                            <h6 style="color: black;">2. Xây dựng CV</h6>
+                        </th>
+                        <th>
+                            <p style="font-size: xx-large"><i class="fas fa-feather"></i></p>
+                            <h6 style="color: black;">3. Hoàn tất hồ sơ</h6>
+                        </th>
+                        <th>
+                            <p style="font-size: xx-large"><i class="fas fa-comments"></i></p>
+                            <h6 style="color: black;">4. Thuần thục phỏng vấn</h6>
+                        </th>
+                        <th>
+                            <p style="font-size: xx-large"><i class="fas fa-check-circle"></i></p>
+                            <h6 style="color: black;">5. Nhận việc</h6>
+                        </th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div style="padding-left: 140px; padding-right: 140px; padding-top: 50px; ">
+            <h2 style="text-align: center;">Trải nghiệm 1 ngày tại CodeGym</h2>
+            <div><iframe width="1100" height="600" src="https://www.youtube.com/embed/oywkmb5XNno"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe></div>
+
+        </div>
+        <div
+            style="padding-left: 140px; padding-right: 140px; padding-top: 50px; background-color: #EEEEEE; text-align: center;  padding-left: 210px;">
+            <h2 style="text-align: center;">KHÓA HỌC</h2>
+
+            <table class="border border-dark table-bordered " style="border: 1px; text-align: left; width: 1000px;">
+                <td><img loading="eager"
+                        class="alignnone size-full wp-image-1809 jetpack-lazy-image jetpack-lazy-image--handled"
+                        style="margin-left: auto;margin-right: auto"
+                        src="https://i1.wp.com/codegym.vn/wp-content/uploads/2018/07/java_stack.png?resize=162%2C162&amp;ssl=1"
+                        alt="" width="162" height="162" data-recalc-dims="1"
+                        srcset="https://i1.wp.com/codegym.vn/wp-content/uploads/2018/07/java_stack.png?w=162&amp;ssl=1 162w, https://i1.wp.com/codegym.vn/wp-content/uploads/2018/07/java_stack.png?resize=150%2C150&amp;ssl=1 150w"
+                        data-lazy-loaded="1" sizes="(max-width: 162px) 100vw, 162px"></td>
+                <td>
+                    <ul>
+                        <li>Variables & Data types</li>
+                        <li>Program Flow</li>
+                        <li>Array</li>
+                        <li>Object</li>
+                        <li>JavaScript</li>
+                        <li>Function</li>
+                        <li>Debug</li>
+                        <li>Git Basic</li>
+                        <li>HTML Basic</li>
+                        <li>How to learn</li>
+                        <li>Kanban</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>Java</li>
+                        <li>OOP</li>
+                        <li>Spring MVC</li>
+                        <li>Database</li>
+                        <li>REST</li>
+                        <li>Coding Convention</li>
+                        <li>Linux</li>
+                        <li>UML</li>
+                        <li>Reading Skills</li>
+                        <li>Information Seeking</li>
+
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>Project</li>
+                        <li>Scrum</li>
+                        <li>Algorithms</li>
+                        <li>Git (team work)</li>
+                        <li>Design Pattern</li>
+                        <li>Refactoring</li>
+                        <li>OOAD</li>
+                        <li>Testing & TDD</li>
+                        <li>Portfolio building</li>
+                        <li>Career Development</li>
+                        <li>Working Skills</li>
+                        <li>Professionalism</li>
+                    </ul>
+                </td>
+            </table>
+
+        </div>
+        <div style="padding-left: 140px; padding-right: 140px; padding-top: 70px;">
+            <div class="row text-center" style="color:orangered">
+                <div class="col-6">
+                    <!-- <p style="font-size: xx-large"><i class="far fa-edit"></i></p> -->
+                    <h4 style="color: black;">HỆ THỐNG PHẦN MỀM HỖ TRỢ HỌC TẬP</h4>
+                    <p style="color: black; text-align: left; padding-top: 20px;">Bạn sẽ có toàn quyền truy cập vào các
+                        hệ thống phần mềm hỗ trợ học tập hiện đại của CodeGym, bao gồm: Hệ thống học trực tuyến, hệ
+                        thống quản lý dự án, hệ thống luyện code, hệ thống hồ sơ năng lực trực tuyến, và bộ tài liệu các
+                        khoá học có video hướng dẫn thực hành, bài đọc, bài thực hành, bài tập, quiz….
+
+                        Không chỉ hỗ trợ việc học, hệ thống số còn giúp huấn luyện viên theo – đánh giá năng lưc của
+                        từng học viên để có phương pháp đào tạo phù hợp.
+                    </p>
+                    <a type="button" class="btn btn-primary btn-lg" style="background-color: orangered;">Khám Phá</a>
+                </div>
+                <div class="col-6">
+                    <img loading="eager" width="400" height="400"
+                        src="https://i2.wp.com/codegym.vn/wp-content/uploads/2018/06/he-thong-hoc.png?resize=878%2C863&amp;ssl=1"
+                        alt="" title="" class="wp-image-1227 jetpack-lazy-image jetpack-lazy-image--handled"
+                        data-recalc-dims="1"
+                        srcset="https://i2.wp.com/codegym.vn/wp-content/uploads/2018/06/he-thong-hoc.png?w=878&amp;ssl=1 878w, https://i2.wp.com/codegym.vn/wp-content/uploads/2018/06/he-thong-hoc.png?resize=300%2C295&amp;ssl=1 300w, https://i2.wp.com/codegym.vn/wp-content/uploads/2018/06/he-thong-hoc.png?resize=768%2C755&amp;ssl=1 768w"
+                        data-lazy-loaded="1" sizes="(max-width: 878px) 100vw, 878px">
+                </div>
+            </div>
+        </div>
+
+        <div style="padding-left: 140px; padding-right: 140px; padding-top: 70px; background-color: #EEEEEE;">
+            <div class="row text-center" style="color:orangered">
+                <div class="col-6">
+                    <ul style="list-style-type: none;">
+                        <li>
+                            <div><iframe width="560" height="315" src="https://www.youtube.com/embed/O4gU8_He5zc"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe></div>
+                        </li>
+                        <li>
+                            <div><iframe width="560" height="315" src="https://www.youtube.com/embed/9qdoiM4uhXw"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe></div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6 " style="padding-left: 10px ;">
+                    <ul>
+                        <li>
+                            <div><iframe width="560" height="315" src="https://www.youtube.com/embed/EgkOTrn8g_A"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe></div>
+                        </li>
+                        <li>
+                            <div><iframe width="560" height="315" src="https://www.youtube.com/embed/APUwjun2UVA"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div style=" padding-top: 70px; ">
+            <h4 style="text-align: center;">Học viên CodeGym đang làm ở đâu?</h4>
+            <p style="text-align: center; padding-left: 150px; padding-right: 150px;" >Mặc dù hơn 80% học viên không có kinh nghiệm về lập trình trước đó. Theo tỉ lệ thống kê, 100% học viên
+                của CodeGym có việc làm trong 45 ngày kể từ khi tốt nghiệp, với mức lương trung bình từ 6 – 12
+                triệu/tháng.</p>
+                <div class="row text-center mt-4" >
+                    <div class="col-2"></div>
+                    <div class="col-2"><img src="https://i0.wp.com/codegym.vn/wp-content/uploads/2019/04/FSoft.png?resize=180%2C60&ssl=1" alt=""></div>
+                    <div class="col-2"><img src="https://i0.wp.com/codegym.vn/wp-content/uploads/2019/08/NAL.png?resize=180%2C60&ssl=1" alt=""></div>
+                    <div class="col-2"><img src="https://i1.wp.com/codegym.vn/wp-content/uploads/2019/08/NTQ.png?resize=180%2C60&ssl=1" alt=""></div>
+                    <div class="col-2"><img src="https://i0.wp.com/codegym.vn/wp-content/uploads/2019/08/VELA.png?resize=242%2C81&ssl=1" alt=""></div>
+                    <div class="col-2"></div>
+                </div>
+                <div class="row text-center mt-4" >
+                    <div class="col-2"></div>
+                    <div class="col-2"><img src="https://i2.wp.com/codegym.vn/wp-content/uploads/2019/04/vietsoftware.png?resize=180%2C60&ssl=1" alt=""></div>
+                    <div class="col-2"><img src="https://i2.wp.com/codegym.vn/wp-content/uploads/2019/04/vietsoftware.png?resize=180%2C60&ssl=1" alt=""></div>
+                    <div class="col-2"><img src="https://i2.wp.com/codegym.vn/wp-content/uploads/2019/04/M-obio.png?resize=180%2C60&ssl=1" alt=""></div>
+                    <div class="col-2"><img src="https://i0.wp.com/codegym.vn/wp-content/uploads/2019/04/ecommage.png?resize=180%2C60&ssl=1" alt=""></div>
+                    <div class="col-2"></div>
+                </div>
+                <div class="row text-center mt-4" >
+                    <div class="col-2"></div>
+                    <div class="col-2"><img src="https://i1.wp.com/codegym.vn/wp-content/uploads/2019/04/revotech.png?resize=180%2C60&ssl=1" alt=""></div>
+                    <div class="col-2"><img src="https://i0.wp.com/codegym.vn/wp-content/uploads/2019/04/AC-man.png?resize=180%2C60&ssl=1" alt=""></div>
+                    <div class="col-2"><img src="https://i1.wp.com/codegym.vn/wp-content/uploads/2019/04/bi-plus.png?resize=180%2C60&ssl=1" alt=""></div>
+                    <div class="col-2"><img src="https://i0.wp.com/codegym.vn/wp-content/uploads/2019/04/Seatech.png?resize=180%2C60&ssl=1" alt=""></div>
+                    <div class="col-2"></div>
+                </div>
+                <div class="row text-center mt-4" >
+                    <div class="col-2"></div>
+                    <div class="col-2"><img src="https://i2.wp.com/codegym.vn/wp-content/uploads/2019/04/mcredit.png?resize=180%2C60&ssl=1" alt=""></div>
+                    <div class="col-2"><img src="https://i0.wp.com/codegym.vn/wp-content/uploads/2019/04/deha.png?resize=180%2C60&ssl=1" alt=""></div>
+                    <div class="col-2"><img src="https://i2.wp.com/codegym.vn/wp-content/uploads/2019/04/Agilead.png?resize=180%2C60&ssl=1" alt=""></div>
+                    <div class="col-2"><img src="https://i0.wp.com/codegym.vn/wp-content/uploads/2019/04/NCC.png?resize=180%2C60&ssl=1" alt=""></div>
+                    <div class="col-2"></div>
+                </div>
+                <div style="text-align: center;" class="mt-4"> <a  type="button" class="btn btn-primary btn-lg" style="background-color: orangered; " >Xem Thêm</a></div>
+               
+        </div>  
+    </div>
+</body>
+
+</html>
