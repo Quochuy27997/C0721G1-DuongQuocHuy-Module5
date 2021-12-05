@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-calculator',
+  selector: 'app-calculator', //bộ chọn
   templateUrl: './calculator.component.html',
   styleUrls: ['./calculator.component.css']
+
 })
 export class CalculatorComponent implements OnInit {
   output: number;
