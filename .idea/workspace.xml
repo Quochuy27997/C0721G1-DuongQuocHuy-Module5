@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fa794cb2-cc2c-4316-ae9f-844df6979856" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/_06_form/form/src/~bootstrap/dist/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_06_form/form/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/_06_form/form/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_06_form/form/src/app/login/login.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/_06_form/form/src/app/login/login.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_06_form/form/src/app/login/login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/_06_form/form/src/app/login/login.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_06_form/form/src/app/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/_06_form/form/src/app/login/login.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +31,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="ts.external.directory.path" value="$PROJECT_DIR$/_02_typescript/thuc_hanh_01/node_modules/typescript/lib" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/bai_tap/angular-hackernews-app/node_modules/typescript/lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -42,6 +46,7 @@
       <workItem from="1638846866524" duration="181000" />
       <workItem from="1638870472636" duration="262000" />
       <workItem from="1638892825140" duration="2579000" />
+      <workItem from="1638925816809" duration="734000" />
     </task>
     <servers />
   </component>
