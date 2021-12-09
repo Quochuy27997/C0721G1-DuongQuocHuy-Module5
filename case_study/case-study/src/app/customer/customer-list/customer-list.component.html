@@ -1,0 +1,59 @@
+<h1>Blog</h1>
+<a type="button" class="btn btn-primary btn-lg">Add</a>
+
+<table border="1" cellpadding="5" class="table table-striped">
+  <thead>
+  <tr>
+    <th>STT</th>
+    <th>ID</th>
+    <th>Code</th>
+    <th>Name</th>
+    <th>Type</th>
+    <th>Birth Day</th>
+    <th>ID Card</th>
+    <th>Phone</th>
+    <th>Email</th>
+    <th>Address</th>
+    <th>Edit</th>
+    <th>Delete</th>
+    <th>Select</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let cus of customerList; index as i">
+    <td>{{i + 1}}</td>
+    <td>{{cus.id}}</td>
+    <td>{{cus.code}}</td>
+    <td>{{cus.name}}</td>
+    <td>{{cus.type.type}}</td>
+    <td>{{cus.birthday}}</td>
+    <td>{{cus.idCard}}</td>
+    <td>{{cus.phone}}</td>
+    <td>{{cus.email}}</td>
+    <td>{{cus.address}}</td>
+
+
+    <td><a type="button"
+           class="btn btn-primary btn-lg">Edit</a>
+    </td>
+    <td>
+      <button type="button" class="btn btn-primary btn-lg"
+              data-toggle="modal" data-target="#modalDelete">
+        Delete
+      </button>
+    </td>
+  </tr>
+
+<!--  <tr>-->
+<!--    <td *>{{  customerList[0].id}}</td>-->
+<!--    <td>{{customerList[0].code}}</td>-->
+<!--    <td>{{customerList[0].name}}</td>-->
+<!--    <td>{{customerList[0].type.type}}</td>-->
+<!--    <td>{{customerList[0].id}}</td>-->
+<!--    <td>{{customerList[0].id}}</td>-->
+<!--    <td>{{customerList[0].id}}</td>-->
+<!--    <td>{{customerList[0].id}}</td>-->
+<!--  </tr>-->
+
+  </tbody>
+</table>
