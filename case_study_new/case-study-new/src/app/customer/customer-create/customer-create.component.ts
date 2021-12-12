@@ -4,6 +4,7 @@ import {CustomerService} from "../../service/customer-service.service";
 import {CustomerType} from "../../model/customer-type";
 import {CustomerTypeService} from "../../service/customer-type.service";
 import {Customer} from "../../model/customer";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-customer-create',
@@ -23,23 +24,31 @@ export class CustomerCreateComponent implements OnInit {
     address: new FormControl(''),
   });
   typeList: CustomerType[];
-  // customerList: Customer[]=[];
+
+
 
   constructor(private customerService: CustomerService,
-              private typeService: CustomerTypeService
+              private typeService: CustomerTypeService,
+              private router: Router
   ) {
   }
 
 
   ngOnInit(): void {
 
-    this.typeList = this.typeService.getAll();
+    this.typeService.getAll().subscribe(value => {
+      this.typeList = value;
+    });
   }
 
   submit() {
     const customer = this.customerForm.value;
-    this.customerService.saveCustomer(customer);
+
+    this.customerService.createCustomer(customer).subscribe();
+    // this.customerService.createCustomer(customer);
     this.customerForm.reset();
+    alert("thêm mới thành công");
+    this.router.navigateByUrl("customer/list");
   }
 
 }

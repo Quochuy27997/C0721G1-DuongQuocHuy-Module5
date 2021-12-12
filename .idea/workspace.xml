@@ -2,202 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fa794cb2-cc2c-4316-ae9f-844df6979856" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/_07_service/service/.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/angular.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/browserslist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/e2e/protractor.conf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/e2e/src/app.e2e-spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/e2e/src/app.po.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/e2e/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/karma.conf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/src/app/app-routing.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/src/app/app.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/src/app/app.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/src/app/app.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/src/app/app.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/src/app/app.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/src/app/category/category-create/category-create.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/src/app/category/category-create/category-create.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/src/app/category/category-create/category-create.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/src/app/category/category-create/category-create.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/src/app/category/category-delete/category-delete.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/src/app/category/category-delete/category-delete.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/src/app/category/category-delete/category-delete.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/src/app/category/category-delete/category-delete.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/src/app/category/category-edit/category-edit.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/src/app/category/category-edit/category-edit.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/src/app/category/category-edit/category-edit.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/src/app/category/category-edit/category-edit.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/src/app/category/category-list/category-list.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/src/app/category/category-list/category-list.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/src/app/category/category-list/category-list.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/src/app/category/category-list/category-list.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/src/app/category/category-routing.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/src/app/category/category.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/src/app/dictionary/dictionary.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/src/app/dictionary/dictionary.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/src/app/dictionary/dictionary.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/src/app/dictionary/dictionary.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/src/app/iword.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/src/app/model/category.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/src/app/model/product.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/src/app/model/song.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/src/app/product/product-create/product-create.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/src/app/product/product-create/product-create.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/src/app/product/product-create/product-create.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/src/app/product/product-create/product-create.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/src/app/product/product-delete/product-delete.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/src/app/product/product-delete/product-delete.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/src/app/product/product-delete/product-delete.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/src/app/product/product-delete/product-delete.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/src/app/product/product-edit/product-edit.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/src/app/product/product-edit/product-edit.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/src/app/product/product-edit/product-edit.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/src/app/product/product-edit/product-edit.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/src/app/product/product-list/product-list.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/src/app/product/product-list/product-list.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/src/app/product/product-list/product-list.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/src/app/product/product-list/product-list.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/src/app/product/product-routing.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/src/app/product/product.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/src/app/service/category.service.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/src/app/service/category.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/src/app/service/date-util.service.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/src/app/service/date-util.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/src/app/service/dictionary.service.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/src/app/service/dictionary.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/src/app/service/product.service.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/src/app/service/product.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/src/app/service/song.service.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/src/app/service/song.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/src/app/timelines/timelines.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/src/app/timelines/timelines.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/src/app/timelines/timelines.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/src/app/timelines/timelines.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/src/app/word-detail/word-detail.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/src/app/word-detail/word-detail.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/src/app/word-detail/word-detail.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/src/app/word-detail/word-detail.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/src/app/youtube-player/youtube-player.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/src/app/youtube-player/youtube-player.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/src/app/youtube-player/youtube-player.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/src/app/youtube-player/youtube-player.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/src/app/youtube-playlist/youtube-playlist.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/src/app/youtube-playlist/youtube-playlist.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/src/app/youtube-playlist/youtube-playlist.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/src/app/youtube-playlist/youtube-playlist.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/src/assets/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/src/environments/environment.prod.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/src/environments/environment.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/src/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/src/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/src/main.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/src/polyfills.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/src/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/src/test.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/tsconfig.app.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/tsconfig.spec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_07_service/service/tslint.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study/case-study/.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study/case-study/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study/case-study/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study/case-study/angular.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study/case-study/browserslist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study/case-study/e2e/protractor.conf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study/case-study/e2e/src/app.e2e-spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study/case-study/e2e/src/app.po.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study/case-study/e2e/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study/case-study/karma.conf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study/case-study/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study/case-study/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study/case-study/src/app/app-routing.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study/case-study/src/app/app.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study/case-study/src/app/app.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study/case-study/src/app/app.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study/case-study/src/app/app.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study/case-study/src/app/app.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study/case-study/src/app/customer/customer-list/customer-list.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study/case-study/src/app/customer/customer-list/customer-list.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study/case-study/src/app/customer/customer-list/customer-list.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study/case-study/src/app/customer/customer-list/customer-list.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study/case-study/src/app/customer/customer-routing.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study/case-study/src/app/customer/customer.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study/case-study/src/app/model/customer-type.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study/case-study/src/app/model/customer-type.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study/case-study/src/app/model/customer.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study/case-study/src/app/model/customer.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study/case-study/src/app/service/customer-type.service.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study/case-study/src/app/service/customer-type.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study/case-study/src/app/service/customer.service.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study/case-study/src/app/service/customer.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study/case-study/src/assets/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study/case-study/src/environments/environment.prod.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study/case-study/src/environments/environment.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study/case-study/src/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study/case-study/src/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study/case-study/src/main.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study/case-study/src/polyfills.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study/case-study/src/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study/case-study/src/test.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study/case-study/tsconfig.app.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study/case-study/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study/case-study/tsconfig.spec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study/case-study/tslint.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_new/case-study-new/.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_new/case-study-new/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_new/case-study-new/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_new/case-study-new/angular.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_new/case-study-new/browserslist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_new/case-study-new/e2e/protractor.conf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_new/case-study-new/e2e/src/app.e2e-spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_new/case-study-new/e2e/src/app.po.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_new/case-study-new/e2e/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_new/case-study-new/karma.conf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_new/case-study-new/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_new/case-study-new/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_new/case-study-new/src/app/app-routing.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_new/case-study-new/src/app/app.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_new/case-study-new/src/app/app.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_new/case-study-new/src/app/app.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_new/case-study-new/src/app/app.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_new/case-study-new/src/app/app.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_new/case-study-new/src/app/customer/customer-create/customer-create.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_new/case-study-new/src/app/customer/customer-create/customer-create.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_new/case-study-new/src/app/customer/customer-create/customer-create.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_new/case-study-new/src/app/customer/customer-create/customer-create.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_new/case-study-new/src/app/customer/customer-list/customer-list.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_new/case-study-new/src/app/customer/customer-list/customer-list.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_new/case-study-new/src/app/customer/customer-list/customer-list.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_new/case-study-new/src/app/customer/customer-list/customer-list.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_new/case-study-new/src/app/customer/customer-routing.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_new/case-study-new/src/app/customer/customer.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_new/case-study-new/src/app/model/customer-type.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_new/case-study-new/src/app/model/customer-type.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_new/case-study-new/src/app/model/customer.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_new/case-study-new/src/app/model/customer.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_new/case-study-new/src/app/service/customer-service.service.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_new/case-study-new/src/app/service/customer-service.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_new/case-study-new/src/app/service/customer-type.service.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_new/case-study-new/src/app/service/customer-type.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_new/case-study-new/src/assets/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_new/case-study-new/src/environments/environment.prod.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_new/case-study-new/src/environments/environment.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_new/case-study-new/src/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_new/case-study-new/src/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_new/case-study-new/src/main.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_new/case-study-new/src/polyfills.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_new/case-study-new/src/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_new/case-study-new/src/test.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_new/case-study-new/tsconfig.app.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_new/case-study-new/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_new/case-study-new/tsconfig.spec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_new/case-study-new/tslint.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study_new/case-study-new/src/app/data/db.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study_new/case-study-new/src/app/service/service-routing.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study_new/case-study-new/src/app/service/service.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_new/case-study-new/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_new/case-study-new/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_new/case-study-new/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_new/case-study-new/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_new/case-study-new/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_new/case-study-new/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_new/case-study-new/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_new/case-study-new/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_new/case-study-new/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_new/case-study-new/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_new/case-study-new/src/app/customer/customer-list/customer-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_new/case-study-new/src/app/customer/customer-list/customer-list.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_new/case-study-new/src/app/customer/customer.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_new/case-study-new/src/app/customer/customer.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_new/case-study-new/src/app/service/customer-service.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_new/case-study-new/src/app/service/customer-service.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -230,7 +46,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="ts.external.directory.path" value="$PROJECT_DIR$/case_study/case-study/node_modules/typescript/lib" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/case_study_new/case-study-new/node_modules/typescript/lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -255,7 +71,10 @@
       <workItem from="1638945157394" duration="1016000" />
       <workItem from="1638973676671" duration="8604000" />
       <workItem from="1639013078680" duration="5199000" />
-      <workItem from="1639041400965" duration="2281000" />
+      <workItem from="1639041400965" duration="2711000" />
+      <workItem from="1639064188979" duration="4654000" />
+      <workItem from="1639124343124" duration="552000" />
+      <workItem from="1639269815662" duration="15632000" />
     </task>
     <servers />
   </component>

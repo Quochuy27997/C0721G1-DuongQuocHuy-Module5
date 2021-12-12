@@ -1,10 +1,15 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+import {AppRoutingModule} from './app-routing.module';
+import {AppComponent} from './app.component';
 import {CommonModule} from "@angular/common";
 import {CustomerModule} from "./customer/customer.module";
+import {EmployeeModule} from "./employee/employee.module";
+import {ServiceModule} from "./service/service.module";
+import {AppserviceModule} from "./appservice/appservice.module";
+import {HttpClient, HttpClientModule} from "@angular/common/http";
+
 
 @NgModule({
   declarations: [
@@ -14,9 +19,14 @@ import {CustomerModule} from "./customer/customer.module";
     BrowserModule,
     AppRoutingModule,
     CommonModule,
-    CustomerModule
+    CustomerModule,
+    EmployeeModule,
+    ServiceModule,
+    AppserviceModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

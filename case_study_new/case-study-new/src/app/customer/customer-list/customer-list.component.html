@@ -1,5 +1,7 @@
-<h1>Blog</h1>
-<a type="button" class="btn btn-primary btn-lg">Add</a>
+<h1>Customer</h1>
+
+
+<a type="button" class="btn btn-primary btn-lg" routerLink="/customer/create">Tạo mới Customer</a>
 
 <table border="1" cellpadding="5" class="table table-striped">
   <thead>
@@ -32,17 +34,16 @@
     <td>{{cus.address}}</td>
 
 
-    <td ><a type="button"
-           class="btn btn-primary btn-lg">Edit</a>
+    <td><a type="button"
+           class="btn btn-primary btn-lg" routerLink="/customer/edit/{{cus.id}}">Edit</a>
     </td>
     <td>
       <button type="button" class="btn btn-primary btn-lg"
-              data-toggle="modal" data-target="#modalDelete">
+              data-toggle="modal" data-target="#modalDelete" routerLink="/customer/delete/{{cus.id}}">
         Delete
       </button>
     </td>
   </tr>
-
 
 
   </tbody>

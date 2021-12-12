@@ -1,68 +1,61 @@
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core';
 import {Customer} from "../model/customer";
+import {HttpClient} from "@angular/common/http";
+import {Observable} from "rxjs";
+
 
 @Injectable({
   providedIn: 'root'
 })
 export class CustomerService {
-  customerList: Customer[] = [
-    {
-      id:1,
-      code:'KH-0001',
-      type: {id:1,type:'Diamond'},
-      name:'Lê An',
-      birthday:'2000-02-02',
-      idCard:'201605626',
-      phone:'0947829245',
-      email:'tan@gmail.com',
-      address:'Da Nang',
-    },
-    {
-      id:2,
-      code:'KH-0002',
-      type: {id:3,type:'Gold'},
-      name:'Trần Thị Bê',
-      birthday:'2000-02-02',
-      idCard:'201605626',
-      phone:'0947829245',
-      email:'tan@gmail.com',
-      address:'Da Nang',
-    },
-    {
-      id:4,
-      code:'KH-0003',
-      type: {id:3,type:'Member'},
-      name:'Trần Văn Cê',
-      birthday:'2000-02-02',
-      idCard:'201605626',
-      phone:'0947829245',
-      email:'tan@gmail.com',
-      address:'Da Nang',
-    },
-  ]
+  customerList: Customer[];
+  private apiUrl = 'http://localhost:3000/customerList';
 
-  constructor() {
-  }
-  getAll(){
-    return this.customerList;
+  constructor(private httpClient: HttpClient) {
   }
 
-  saveCustomer(customer) {
-    this.customerList.push(customer);
+  getAll(): Observable<Customer[]> {
+    return this.httpClient.get<Customer[]>(this.apiUrl);
   }
 
-  findById(id: number) {
-    return this.customerList.find(category => category.id === id);
+  createCustomer(customerObj: Customer): Observable<void> {
+    return this.httpClient.post<void>(
+      this.apiUrl, customerObj
+    );
   }
 
-  updateCategory(customer: Customer) {
-    for (let i = 0; i < this.customerList.length; i++) {
-      if (this.customerList[i].id === customer.id) {
-        this.customerList[i] = customer;
-      }
-    }
+  updateCustomer(customerObj: Customer): Observable<void> {
+    return this.httpClient.patch<void>(
+      this.apiUrl + '/' + customerObj.id, customerObj
+    );
   }
-  deleteCustomer(id: number) {
-    this.customerList.splice(this.customerList.findIndex(cus=>cus.id===id),1);
+
+  findById(customerId: number): Observable<Customer> {
+    return this.httpClient.get<Customer>(this.apiUrl + '/' + customerId);
   }
+
+  deleteCustomer(customerId: number): Observable<void> {
+    return this.httpClient.delete<void>(this.apiUrl + '/' + customerId);
+  }
+
+
+  // saveCustomer(customer) {
+  //   this.customerList.push(customer);
+  // }
+  //
+  // findById(id: number) {
+  //   return this.customerList.find(category => category.id === id);
+  // }
+
+  // updateCustomer(id: number, customer: Customer) {
+  //   for (let i = 0; i < this.customerList.length; i++) {
+  //     if (this.customerList[i].id === customer.id) {
+  //       this.customerList[i] = customer;
+  //     }
+  //   }
+  //
+  // }
+  // deleteCustomer(id: number) {
+  //   this.customerList.splice(this.customerList.findIndex(cus=>cus.id===id),1);
+  // }
 }

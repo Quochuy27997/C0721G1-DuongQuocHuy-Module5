@@ -7,10 +7,12 @@ import { CustomerCreateComponent } from './customer-create/customer-create.compo
 import {ReactiveFormsModule} from "@angular/forms";
 
 import {BrowserModule} from "@angular/platform-browser";
+import { CustomerEditComponent } from './customer-edit/customer-edit.component';
+import { CustomerDeleteComponent } from './customer-delete/customer-delete.component';
 
 
 @NgModule({
-  declarations: [CustomerListComponent, CustomerCreateComponent],
+  declarations: [CustomerListComponent, CustomerCreateComponent, CustomerEditComponent, CustomerDeleteComponent],
   imports: [
     CommonModule,
     CustomerRoutingModule,

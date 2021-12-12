@@ -1,0 +1,56 @@
+<h1>Sửa dịch vụ</h1>
+<form [formGroup]="serviceForm" (ngSubmit)="updateService()">
+
+  <table>
+
+    <tr>
+      <td>Code:</td>
+      <td><input type="text" formControlName="code"></td>
+    </tr>
+    <tr>
+      <td>Name:</td>
+      <td><input type="text" formControlName="name"></td>
+    </tr>
+
+    <tr>
+      <td>Area</td>
+      <td><input type="text" formControlName="area"></td>
+    </tr>
+    <tr>
+      <td>Number of floor</td>
+      <td><input type="text" formControlName="numberFloor"></td>
+    </tr>
+    <tr>
+      <td>Max People</td>
+      <td><input type="text" formControlName="maxPeople"></td>
+    </tr>
+    <tr>
+      <td>Cost</td>
+      <td><input type="text" formControlName="cost"></td>
+    </tr>
+
+    <tr>
+      <td>Rent Type:</td>
+      <td><select formControlName="rentType" class="form-control" [compareWith]="compareRentType" >
+        <option value="">--</option>
+        <option *ngFor="let rt of rentTypeList" [ngValue]="rt">{{rt.name}}  </option>
+      </select></td>
+    </tr>
+
+    <tr>
+      <td>status</td>
+      <td>
+        <div class="ipGroup">
+          <input type="radio" class="inputStatus" formControlName="status" value="1">Đang sử dụng
+          <input type="radio" class="inputStatus" formControlName="status" value="0">Chưa sử dụng
+        </div>
+      </td>
+    </tr>
+    <tr>
+
+      <td>
+        <button>Sửa</button>
+      </td>
+    </tr>
+  </table>
+</form>

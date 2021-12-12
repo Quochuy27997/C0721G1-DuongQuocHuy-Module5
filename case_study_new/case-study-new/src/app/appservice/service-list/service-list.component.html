@@ -1,0 +1,60 @@
+<h1>Service</h1>
+
+<a routerLink="/service/create" type="button" class="btn btn-primary btn-lg">Thêm mới service</a>
+
+<form class="navbar-form navbar-left">
+  <div class="form-group">
+    <input type="text" class="form-control" placeholder="Search" [(ngModel)]="term" >
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
+
+<table border="1" cellpadding="5" class="table table-striped">
+  <thead>
+  <tr>
+    <th>STT</th>
+    <th>ID</th>
+    <th>Code</th>
+    <th>Name</th>
+    <th>Area</th>
+    <th>Number of floor</th>
+    <th>Max people</th>
+    <th>Cost</th>
+    <th>RentType</th>
+    <th>Status</th>
+    <th>Edit</th>
+    <th>Delete</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let ser of serviceList; index as i |filter:term | paginate: { itemsPerPage: 2, currentPage: p } ">
+    <td>{{i + 1}}</td>
+    <td>{{ser.id}}</td>
+    <td>{{ser.code}}</td>
+    <td>{{ser.name}}</td>
+    <td>{{ser.area}}</td>
+    <td>{{ser.numberFloor}}</td>
+    <td>{{ser.maxPeople}}</td>
+    <td>{{ser.cost}}</td>
+    <td>{{ser.rentType.name}}</td>
+    <td>
+      <p *ngIf="ser.status==1">Đang sử dụng</p>
+      <p *ngIf="ser.status==2">Chưa sử dụng</p>
+    </td>
+
+
+    <td><a type="button"
+           class="btn btn-primary btn-lg" routerLink="/service/edit/{{ser.id}}">Edit</a>
+    </td>
+    <td>
+      <button type="button" class="btn btn-primary btn-lg"
+              data-toggle="modal" data-target="#modalDelete" routerLink="/service/delete/{{ser.id}}">
+        Delete
+      </button>
+    </td>
+  </tr>
+
+
+  </tbody>
+</table>
+<pagination-controls (pageChange)="p = $event"></pagination-controls>

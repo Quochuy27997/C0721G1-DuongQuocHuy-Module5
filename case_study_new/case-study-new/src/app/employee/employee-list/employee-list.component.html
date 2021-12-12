@@ -1,0 +1,54 @@
+<h1>Employee</h1>
+
+<a routerLink="/employee/create" type="button" class="btn btn-primary btn-lg">Tạo mới employee</a>
+<table border="1" cellpadding="5" class="table table-striped">
+  <thead>
+  <tr>
+    <th>STT</th>
+    <th>ID</th>
+    <th>Code</th>
+    <th>Name</th>
+    <th>Posiion</th>
+    <th>Education</th>
+    <th>Division</th>
+    <th>Birthday</th>
+    <th>ID Card</th>
+    <th>Salary</th>
+    <th>Phone</th>
+    <th>Email</th>
+    <th>Address</th>
+    <th>Edit</th>
+    <th>Delete</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let empl of employeeList; index as i">
+    <td>{{i + 1}}</td>
+    <td>{{empl.id}}</td>
+    <td>{{empl.code}}</td>
+    <td>{{empl.name}}</td>
+    <td>{{empl.position.name}}</td>
+    <td>{{empl.education.name}}</td>
+    <td>{{empl.division.name}}</td>
+    <td>{{empl.birthday}}</td>
+    <td>{{empl.idCard}}</td>
+    <td>{{empl.salary}}</td>
+    <td>{{empl.phone}}</td>
+    <td>{{empl.email}}</td>
+    <td>{{empl.address}}</td>
+
+
+    <td><a type="button"
+           class="btn btn-primary btn-lg" routerLink="/employee/edit/{{empl.id}}">Edit</a>
+    </td>
+    <td>
+      <button type="button" class="btn btn-primary btn-lg"
+              data-toggle="modal" data-target="#modalDelete" routerLink="/employee/delete/{{empl.id}}">
+        Delete
+      </button>
+    </td>
+  </tr>
+
+
+  </tbody>
+</table>
