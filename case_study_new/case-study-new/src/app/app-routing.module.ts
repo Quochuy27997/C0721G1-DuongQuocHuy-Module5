@@ -13,8 +13,6 @@ import {ServiceCreateComponent} from "./appservice/service-create/service-create
 import {ServiceEditComponent} from "./appservice/service-edit/service-edit.component";
 import {ServiceDeleteComponent} from "./appservice/service-delete/service-delete.component";
 import {NgxPaginationModule} from 'ngx-pagination';
-import { Ng2SearchPipeModule } from 'ng2-search-filter';
-import {FormsModule} from '@angular/forms'
 const routes: Routes = [
   {path: 'customer/list', component: CustomerListComponent},
   {path: 'customer/create', component: CustomerCreateComponent},
@@ -35,9 +33,8 @@ const routes: Routes = [
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule,
-    NgxPaginationModule,
-    Ng2SearchPipeModule,
-    FormsModule
+    NgxPaginationModule
+
   ]
 })
 export class AppRoutingModule {

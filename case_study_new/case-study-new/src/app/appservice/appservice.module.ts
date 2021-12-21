@@ -8,6 +8,7 @@ import {BrowserModule} from "@angular/platform-browser";
 import { ServiceCreateComponent } from './service-create/service-create.component';
 import { ServiceEditComponent } from './service-edit/service-edit.component';
 import { ServiceDeleteComponent } from './service-delete/service-delete.component';
+import {NgxPaginationModule} from "ngx-pagination";
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { ServiceDeleteComponent } from './service-delete/service-delete.componen
     AppserviceRoutingModule,
     ReactiveFormsModule,
     BrowserModule,
-    FormsModule
+    FormsModule,
+    NgxPaginationModule
   ]
 })
 export class AppserviceModule { }

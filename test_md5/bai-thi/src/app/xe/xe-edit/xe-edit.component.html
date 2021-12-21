@@ -1,0 +1,122 @@
+<h1>Chỉnh sửa thôg tin xe</h1>
+<form   [formGroup]="xeForm" (ngSubmit)="updateXe()" >
+
+  <table>
+    <tr>
+      <td>Số Xe:</td>
+      <td><input type="text" formControlName="bienSoXe"></td>
+      <div
+        *ngIf="!xeForm.controls.bienSoXe.valid &&( xeForm.controls.bienSoXe.dirty || xeForm.controls.bienSoXe.touched || xeForm.controls.bienSoXe.pristine )">
+        <div style="color: red"
+             [hidden]="!xeForm.controls.bienSoXe.errors.required"> vui lòng
+          nhập
+        </div>
+      </div>
+    </tr>
+    <tr>
+      <td>Loại xe:</td>
+      <td><input type="text" formControlName="loaiXe"></td>
+      <div
+        *ngIf="!xeForm.controls.loaiXe.valid &&( xeForm.controls.loaiXe.dirty || xeForm.controls.loaiXe.touched || xeForm.controls.loaiXe.pristine )">
+        <div style="color: red"
+             [hidden]="!xeForm.controls.loaiXe.errors.required"> vui lòng
+          nhập
+        </div>
+      </div>
+    </tr>
+    <tr>
+      <td>Nhà xe:</td>
+      <td><input type="text" formControlName="nhaXe"></td>
+      <div
+        *ngIf="!xeForm.controls.nhaXe.valid &&( xeForm.controls.nhaXe.dirty || xeForm.controls.nhaXe.touched || xeForm.controls.nhaXe.pristine )">
+        <div style="color: red"
+             [hidden]="!xeForm.controls.nhaXe.errors.required"> vui lòng
+          nhập
+        </div>
+      </div>
+    </tr>
+    <tr>
+      <td>Địa điểm đi:</td>
+      <td> <select formControlName="diaDiemDi" class="form-control" [compareWith]="compareDiaDiemDi" >
+        <option value="">--</option>
+        <option *ngFor="let diadiemdi of diaDiemList" [ngValue]="diadiemdi">{{diadiemdi.name}}  </option>
+      </select></td>
+      <div
+        *ngIf="!xeForm.controls.diaDiemDi.valid &&( xeForm.controls.diaDiemDi.dirty || xeForm.controls.diaDiemDi.touched || xeForm.controls.diaDiemDi.pristine )">
+        <div style="color: red"
+             [hidden]="!xeForm.controls.diaDiemDi.errors.required"> vui lòng
+          nhập
+        </div>
+      </div>
+    </tr>
+    <tr>
+      <td>Địa điểm đến:</td>
+      <td> <select formControlName="diaDiemDen" class="form-control" [compareWith]="compareDiaDiemDen" >
+        <option value="">--</option>
+        <option *ngFor="let diadiemden of diaDiemDenList" [ngValue]="diadiemden">{{diadiemden.name}}  </option>
+      </select></td>
+      <div
+        *ngIf="!xeForm.controls.diaDiemDen.valid &&( xeForm.controls.diaDiemDen.dirty || xeForm.controls.diaDiemDen.touched || xeForm.controls.diaDiemDen.pristine )">
+        <div style="color: red"
+             [hidden]="!xeForm.controls.diaDiemDen.errors.required"> vui lòng
+          nhập
+        </div>
+      </div>
+    </tr>
+    <tr>
+      <td>Số điện thoại</td>
+      <td><input type="text" formControlName="phone"></td>
+      <div
+        *ngIf="!xeForm.controls.phone.valid &&( xeForm.controls.phone.dirty || xeForm.controls.phone.touched || xeForm.controls.phone.pristine )">
+        <div style="color: red"
+             [hidden]="!xeForm.controls.phone.errors.required"> vui lòng
+          nhập
+        </div>
+        <div style="color: red"
+             [hidden]="!xeForm.controls.code.errors.pattern">
+          nhập theo format 090,093,097 và 10 số
+        </div>
+      </div>
+    </tr>
+    <tr>
+      <td>Email</td>
+      <td><input type="text" formControlName="email"></td>
+      <div
+        *ngIf="!xeForm.controls.email.valid &&( xeForm.controls.email.dirty || xeForm.controls.email.touched || xeForm.controls.email.pristine )">
+        <div style="color: red"
+             [hidden]="!xeForm.controls.email.errors.required"> vui lòng
+          nhập
+        </div>
+      </div>
+    </tr>
+    <tr>
+      <td>Giờ đi</td>
+      <td><input type="time" formControlName="gioDi"></td>
+      <div
+        *ngIf="!xeForm.controls.gioDi.valid &&( xeForm.controls.gioDi.dirty || xeForm.controls.gioDi.touched || xeForm.controls.gioDi.pristine )">
+        <div style="color: red"
+             [hidden]="!xeForm.controls.gioDi.errors.required"> vui lòng
+          nhập
+        </div>
+      </div>
+    </tr>
+    <tr>
+      <td>Giờ đến</td>
+      <td><input type="time" formControlName="gioDen"></td>
+      <div
+        *ngIf="!xeForm.controls.gioDen.valid &&( xeForm.controls.gioDen.dirty || xeForm.controls.gioDen.touched || xeForm.controls.gioDen.pristine )">
+        <div style="color: red"
+             [hidden]="!xeForm.controls.gioDen.errors.required"> vui lòng
+          nhập
+        </div>
+      </div>
+    </tr>
+
+    <tr>
+      <td><button (click)="returntList()" >Quay về</button></td>
+      <td><button>Sửa</button></td>
+    </tr>
+
+
+  </table>
+</form>

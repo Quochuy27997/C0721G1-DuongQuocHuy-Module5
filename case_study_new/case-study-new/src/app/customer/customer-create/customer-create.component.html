@@ -5,10 +5,28 @@
     <tr>
       <td>Code:</td>
       <td><input type="text" formControlName="code"></td>
+      <div
+        *ngIf="!customerForm.controls.code.valid &&( customerForm.controls.code.dirty || customerForm.controls.code.touched || customerForm.controls.code.pristine )">
+        <div style="color: red"
+             [hidden]="!customerForm.controls.code.errors.required"> vui lòng
+          nhập
+        </div>
+        <div style="color: red"
+             [hidden]="!customerForm.controls.code.errors.pattern">
+          nhập theo format KH-XXXX
+        </div>
+      </div>
+
     </tr>
     <tr>
       <td>Name:</td>
       <td><input type="text" formControlName="name"></td>
+      <div
+        *ngIf="!customerForm.controls.name.valid && (customerForm.controls.name.dirty || customerForm.controls.name.touched || customerForm.controls.name.pristine)">
+        <div style="color: red"
+             [hidden]="!customerForm.controls.name.errors.required"> vui lòng nhập
+        </div>
+      </div>
     </tr>
     <tr>
       <td>Type:</td>
@@ -16,31 +34,98 @@
         <option value="">--</option>
         <option *ngFor="let t of typeList" [ngValue]="t">{{t.type}}  </option>
       </select></td>
+
+      <div
+        *ngIf="!customerForm.controls.type.valid && (customerForm.controls.type.dirty || customerForm.controls.type.touched || customerForm.controls.type.pristine)">
+        <div style="color: red"
+             [hidden]="!customerForm.controls.type.errors.required "> vui lòng nhập
+        </div>
+      </div>
+
+
     </tr>
     <tr>
       <td>Birthday</td>
       <td><input type="date" formControlName="birthday"></td>
+      <div
+        *ngIf="!customerForm.controls.birthday.valid &&( customerForm.controls.birthday.dirty || customerForm.controls.birthday.touched || customerForm.controls.birthday.pristine) ">
+        <div style="color: red"
+             [hidden]="!customerForm.controls.birthday.errors.required  "> vui lòng
+          nhập
+        </div>
+      </div>
+
+
     </tr>
     <tr>
       <td>CMND</td>
       <td><input type="text" formControlName="idCard"></td>
+
+      <div
+        *ngIf="!customerForm.controls.idCard.valid && (customerForm.controls.idCard.dirty || customerForm.controls.idCard.touched || customerForm.controls.idCard.pristine)">
+        <div style="color: red"
+             [hidden]="!customerForm.controls.idCard.errors.required  "> vui lòng
+          nhập
+        </div>
+        <div style="color: red" [hidden]="!customerForm.controls.idCard.errors.pattern  ">
+          nhập 9-12 số
+        </div>
+      </div>
+
+
     </tr>
     <tr>
       <td>Phone</td>
       <td><input type="text" formControlName="phone"></td>
+
+      <div
+        *ngIf="!customerForm.controls.phone.valid && (customerForm.controls.phone.dirty || customerForm.controls.phone.touched || customerForm.controls.phone.pristine)">
+        <div style="color: red"
+             [hidden]="!customerForm.controls.phone.errors.required "> vui lòng
+          nhập
+        </div>
+        <div style="color: red" [hidden]="!customerForm.controls.phone.errors.pattern  ">
+          Đầu số 090,091
+        </div>
+      </div>
+
+
     </tr>
     <tr>
       <td>Email</td>
       <td><input type="text" formControlName="email"></td>
+
+      <div
+        *ngIf="!customerForm.controls.email.valid && (customerForm.controls.email.dirty || customerForm.controls.email.touched || customerForm.controls.email.pristine)">
+        <div style="color: red"
+             [hidden]="!customerForm.controls.email.errors.required"> vui lòng
+          nhập
+        </div>
+        <div style="color: red" [hidden]="!customerForm.controls.email.errors.pattern ">
+          nhập đúng định dạng email
+        </div>
+      </div>
+
+
     </tr>
     <tr>
       <td>Address</td>
       <td><input type="text" formControlName="address"></td>
+
+      <div
+        *ngIf="!customerForm.controls.address.valid && (customerForm.controls.address.dirty || customerForm.controls.address.touched || customerForm.controls.address.pristine)">
+        <div style="color: red"
+             [hidden]="!customerForm.controls.address.errors.required "> vui lòng
+          nhập
+        </div>
+      </div>
+
+
     </tr>
     <tr>
       <td></td>
       <td>
-        <button>Tạo mới</button>
+        <button type="submit" [disabled]="!customerForm.valid">Tạo mới</button>
       </td>
     </tr>
   </table>

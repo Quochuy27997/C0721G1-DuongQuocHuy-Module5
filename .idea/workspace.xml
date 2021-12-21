@@ -2,18 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fa794cb2-cc2c-4316-ae9f-844df6979856" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/case_study_new/case-study-new/src/app/data/db.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_new/case-study-new/src/app/service/service-routing.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study_new/case-study-new/src/app/service/service.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study_new/case-study-new/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_new/case-study-new/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study_new/case-study-new/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_new/case-study-new/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_new/case-study-new/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_new/case-study-new/db.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/case_study_new/case-study-new/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_new/case-study-new/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study_new/case-study-new/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_new/case-study-new/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study_new/case-study-new/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_new/case-study-new/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_new/case-study-new/src/app/appservice/appservice.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_new/case-study-new/src/app/appservice/appservice.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_new/case-study-new/src/app/appservice/service-list/service-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_new/case-study-new/src/app/appservice/service-list/service-list.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_new/case-study-new/src/app/appservice/service-list/service-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_new/case-study-new/src/app/appservice/service-list/service-list.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_new/case-study-new/src/app/customer/customer-create/customer-create.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_new/case-study-new/src/app/customer/customer-create/customer-create.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_new/case-study-new/src/app/customer/customer-create/customer-create.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_new/case-study-new/src/app/customer/customer-create/customer-create.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/case_study_new/case-study-new/src/app/customer/customer-list/customer-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_new/case-study-new/src/app/customer/customer-list/customer-list.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_new/case-study-new/src/app/customer/customer-list/customer-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_new/case-study-new/src/app/customer/customer-list/customer-list.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/case_study_new/case-study-new/src/app/customer/customer.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_new/case-study-new/src/app/customer/customer.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_new/case-study-new/src/app/employee/employee-create/employee-create.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_new/case-study-new/src/app/employee/employee-create/employee-create.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_new/case-study-new/src/app/employee/employee-list/employee-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_new/case-study-new/src/app/employee/employee-list/employee-list.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_new/case-study-new/src/app/employee/employee-list/employee-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_new/case-study-new/src/app/employee/employee-list/employee-list.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_new/case-study-new/src/app/employee/employee.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_new/case-study-new/src/app/employee/employee.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/case_study_new/case-study-new/src/app/service/customer-service.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_new/case-study-new/src/app/service/customer-service.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_new/case-study-new/src/app/service/employee.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_new/case-study-new/src/app/service/employee.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_new/case-study-new/src/app/service/service.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_new/case-study-new/src/app/service/service.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +52,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="ts.external.directory.path" value="$PROJECT_DIR$/case_study_new/case-study-new/node_modules/typescript/lib" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/_06_form/form/node_modules/typescript/lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -75,6 +81,7 @@
       <workItem from="1639064188979" duration="4654000" />
       <workItem from="1639124343124" duration="552000" />
       <workItem from="1639269815662" duration="15632000" />
+      <workItem from="1639399389963" duration="1686000" />
     </task>
     <servers />
   </component>

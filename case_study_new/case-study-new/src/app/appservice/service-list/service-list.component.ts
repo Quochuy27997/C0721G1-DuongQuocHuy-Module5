@@ -1,6 +1,10 @@
 import {Component, OnInit} from '@angular/core';
 import {Service} from "../../model/service";
 import {ServiceService} from "../../service/service.service";
+import {FormControl, FormGroup} from "@angular/forms";
+import {RentType} from "../../model/rent-type";
+import {RentTypeService} from "../../service/rent-type.service";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-service-list',
@@ -9,10 +13,19 @@ import {ServiceService} from "../../service/service.service";
 })
 export class ServiceListComponent implements OnInit {
   serviceList: Service[] = [];
-  p: number = 1;
-  collection: any[] = someArrayOfThings;
+  p = 1;
+  serchForm: FormGroup = new FormGroup({
+    name: new FormControl(''),
+    rentType: new FormControl('')
 
-  constructor(private serviceService: ServiceService) {
+  });
+  rentTypeList: RentType[];
+  serviceSearch: Service;
+  idDelete: number;
+
+  constructor(private serviceService: ServiceService,
+              private rentTypeService: RentTypeService,
+              private router: Router) {
   }
 
   ngOnInit(): void {
@@ -21,6 +34,28 @@ export class ServiceListComponent implements OnInit {
     this.serviceService.getAll().subscribe(value => {
       this.serviceList = value;
     });
+    this.rentTypeService.getAll().subscribe(value => {
+      this.rentTypeList = value;
+    });
+
   }
 
+  search() {
+    this.serviceSearch = this.serchForm.value;
+    this.serviceService.search(this.serviceSearch).subscribe(value => {
+      this.serviceList = value;
+    });
+  }
+  deleteService() {
+    this.serviceService.deleteService(this.idDelete).subscribe();
+    this.ngOnInit();
+  }
+
+  returnList() {
+    this.router.navigateByUrl("service/list");
+  }
+
+  getIdTemplate(id: number) {
+    this.idDelete = Number(id);
+  }
 }

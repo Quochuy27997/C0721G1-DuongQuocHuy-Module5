@@ -22,15 +22,15 @@ export class ServiceDeleteComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
-  deleteService() {
-    this.serviceService.deleteService(this.id).subscribe();
-    alert('Xoá thành công');
-    this.router.navigateByUrl("service/list");
-  }
-
-  returnList() {
-    this.router.navigateByUrl("service/list");
-  }
+  //
+  // deleteService() {
+  //   this.serviceService.deleteService(this.id).subscribe();
+  //   alert('Xoá thành công');
+  //   this.router.navigateByUrl("service/list");
+  // }
+  //
+  // returnList() {
+  //   this.router.navigateByUrl("service/list");
+  // }
 
 }

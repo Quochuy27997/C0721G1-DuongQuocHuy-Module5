@@ -29,13 +29,13 @@ export class EmployeeDeleteComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  deleteEmployee() {
-    this.employeeService.deleteEmployee(this.id).subscribe();
-    alert('Xoá thành công');
-    this.router.navigateByUrl("employee/list");
-  }
-
-  returnList() {
-    this.router.navigateByUrl("employee/list")
-  }
+//   deleteEmployee() {
+//     this.employeeService.deleteEmployee(this.id).subscribe();
+//     alert('Xoá thành công');
+//     this.router.navigateByUrl("employee/list");
+//   }
+//
+//   returnList() {
+//     this.router.navigateByUrl("employee/list")
+//   }
 }

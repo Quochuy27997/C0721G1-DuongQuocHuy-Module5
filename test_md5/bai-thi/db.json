@@ -1,0 +1,109 @@
+{
+  "studentList": [
+    {
+      "id": 1,
+      "name": "Tien",
+      "dateOfBirth": "2000-06-12"
+    },
+    {
+      "id": 2,
+      "name": "Long",
+      "dateOfBirth": "1999-07-12"
+    },
+    {
+      "id": 3,
+      "name": "Khanh",
+      "dateOfBirth": "2001-08-14"
+    }
+  ],
+  "diaDiemList": [
+    {
+      "id": 1,
+      "name": "Đà Nẵng"
+    },
+    {
+      "id": 2,
+      "name": "Huế"
+    },
+    {
+      "id": 3,
+      "name": "HCM"
+    },
+    {
+      "id": 4,
+      "name": "Hà Nội"
+    },
+    {
+      "id": 5,
+      "name": "Quảng Nam"
+    },
+    {
+      "id": 6,
+      "name": "Quảng Trị"
+    }
+  ],
+  "xeList": [
+    {
+      "id": 2,
+      "bienSoXe": "43A-361.31",
+      "loaiXe": "Ghế nằm",
+      "nhaXe": "Mai Linh",
+      "diemDi": {
+        "id": 1,
+        "name": "Đà Nẵng"
+      },
+      "diemDen": {
+        "id": 2,
+        "name": "Huế"
+      },
+      "phone": "0935328993",
+      "email": "quochuyduongdn97@gmail.com",
+      "gioDi": "12:00",
+      "gioDen": "17:00"
+    },
+    {
+      "id": 4,
+      "bienSoXe": "43A-361.31",
+      "loaiXe": "Ghế nằm",
+      "nhaXe": "Mai Linh",
+      "diemDi": {
+        "id": 1,
+        "name": "Đà Nẵng"
+      },
+      "diemDen": {
+        "id": 2,
+        "name": "Huế"
+      },
+      "phone": "0935328993",
+      "email": "quochuyduongdn97@gmail.com",
+      "gioDi": "12:00",
+      "gioDen": "17:00"
+    }
+  ],
+  "diaDiemDenList": [
+    {
+      "id": 1,
+      "name": "Đà Nẵng"
+    },
+    {
+      "id": 2,
+      "name": "Huế"
+    },
+    {
+      "id": 3,
+      "name": "HCM"
+    },
+    {
+      "id": 4,
+      "name": "Hà Nội"
+    },
+    {
+      "id": 5,
+      "name": "Quảng Nam"
+    },
+    {
+      "id": 6,
+      "name": "Quảng Trị"
+    }
+  ]
+}

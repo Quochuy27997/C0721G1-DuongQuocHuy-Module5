@@ -2,6 +2,7 @@ import {Injectable} from '@angular/core';
 import {Customer} from "../model/customer";
 import {HttpClient} from "@angular/common/http";
 import {Observable} from "rxjs";
+import {Service} from "../model/service";
 
 
 @Injectable({
@@ -38,24 +39,14 @@ export class CustomerService {
     return this.httpClient.delete<void>(this.apiUrl + '/' + customerId);
   }
 
-
-  // saveCustomer(customer) {
-  //   this.customerList.push(customer);
-  // }
-  //
-  // findById(id: number) {
-  //   return this.customerList.find(category => category.id === id);
-  // }
-
-  // updateCustomer(id: number, customer: Customer) {
-  //   for (let i = 0; i < this.customerList.length; i++) {
-  //     if (this.customerList[i].id === customer.id) {
-  //       this.customerList[i] = customer;
-  //     }
-  //   }
-  //
-  // }
-  // deleteCustomer(id: number) {
-  //   this.customerList.splice(this.customerList.findIndex(cus=>cus.id===id),1);
-  // }
+  search(customerSearch: Customer): Observable<Customer[]> {
+    if (customerSearch.type.type === undefined) {
+      return this.httpClient.get<Customer[]>(this.apiUrl + '?' +
+        '&name_like=' + customerSearch.name);
+    }
+    return this.httpClient.get<Customer[]>(this.apiUrl + '?' +
+      '&name_like=' + customerSearch.name +
+      '&type.type_like=' + customerSearch.type.type
+    );
+  }
 }

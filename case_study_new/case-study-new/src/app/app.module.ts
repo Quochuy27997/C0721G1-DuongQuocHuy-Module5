@@ -9,11 +9,13 @@ import {EmployeeModule} from "./employee/employee.module";
 import {ServiceModule} from "./service/service.module";
 import {AppserviceModule} from "./appservice/appservice.module";
 import {HttpClient, HttpClientModule} from "@angular/common/http";
+import { LayoutComponent } from './layout/layout.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LayoutComponent
   ],
   imports: [
     BrowserModule,

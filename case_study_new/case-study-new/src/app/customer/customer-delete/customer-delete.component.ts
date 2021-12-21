@@ -25,13 +25,13 @@ export class CustomerDeleteComponent implements OnInit {
   }
 
 
-  deleteCustomer() {
-    this.customerService.deleteCustomer(this.id).subscribe();
-    alert('Xoá thành công');
-    this.router.navigateByUrl("customer/list");
-  }
-
-  returnList() {
-    this.router.navigateByUrl("customer/list");
-  }
+  // deleteCustomer() {
+  //   this.customerService.deleteCustomer(this.id).subscribe();
+  //   alert('Xoá thành công');
+  //   this.router.navigateByUrl("customer/list");
+  // }
+  //
+  // returnList() {
+  //   this.router.navigateByUrl("customer/list");
+  // }
 }

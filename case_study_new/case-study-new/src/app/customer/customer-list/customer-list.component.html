@@ -3,6 +3,41 @@
 
 <a type="button" class="btn btn-primary btn-lg" routerLink="/customer/create">Tạo mới Customer</a>
 
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modalSearch">
+  Search
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form class="navbar-form navbar-left" [formGroup]="serchFormCustomer">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search by name" formControlName="name">
+          </div>
+          <div class="form-group">
+            <select formControlName="type" class="form-control">
+              <option value="">--</option>
+              <option *ngFor="let t of typeList" [ngValue]="t">{{t.type}}  </option>
+            </select>
+          </div>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" (click)="searchCustomer()" data-dismiss="modal">Tìm kiếm
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
 <table border="1" cellpadding="5" class="table table-striped">
   <thead>
   <tr>
@@ -21,7 +56,7 @@
   </tr>
   </thead>
   <tbody>
-  <tr *ngFor="let cus of customerList; index as i">
+  <tr *ngFor="let cus of customerList| paginate: { itemsPerPage: 2, currentPage: p } ; index as i">
     <td>{{i + 1}}</td>
     <td>{{cus.id}}</td>
     <td>{{cus.code}}</td>
@@ -39,12 +74,40 @@
     </td>
     <td>
       <button type="button" class="btn btn-primary btn-lg"
-              data-toggle="modal" data-target="#modalDelete" routerLink="/customer/delete/{{cus.id}}">
+              data-toggle="modal" data-target="#modalDelete" (click)="getIdTemplate(cus.id)">
         Delete
       </button>
     </td>
   </tr>
 
+  <!-- Modal Delete -->
+  <div class="modal fade" id="modalDelete" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
+       aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Are you want to delete ?
+        </div>
+        <div class="modal-footer">
+
+          <input type="hidden" id="idCustomer" name="id">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" (click)="returnList()"
+                  data-dismiss="modal">Close
+          </button>
+          <button type="submit" class="btn btn-primary" (click)="deleteCustomer()" data-dismiss="modal">Delete</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
 
   </tbody>
 </table>
+<pagination-controls (pageChange)="p = $event"></pagination-controls>

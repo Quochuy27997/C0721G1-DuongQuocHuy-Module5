@@ -9,7 +9,7 @@ import {Observable} from "rxjs";
 })
 export class ServiceService {
 
- serviceList: Service[];
+  serviceList: Service[];
   private apiUrl = 'http://localhost:3000/serviceList';
 
   constructor(private httpClient: HttpClient) {
@@ -37,5 +37,16 @@ export class ServiceService {
 
   deleteService(serviceId: number): Observable<void> {
     return this.httpClient.delete<void>(this.apiUrl + '/' + serviceId);
+  }
+
+  search(serviceSearch: Service): Observable<Service[]> {
+    if (serviceSearch.rentType.name === undefined) {
+      return this.httpClient.get<Service[]>(this.apiUrl + '?' +
+        'name_like=' + serviceSearch.name);
+    }
+    return this.httpClient.get<Service[]>(this.apiUrl + '?' +
+      '&name_like=' + serviceSearch.name +
+      '&rentType.name_like=' + serviceSearch.rentType.name
+    );
   }
 }

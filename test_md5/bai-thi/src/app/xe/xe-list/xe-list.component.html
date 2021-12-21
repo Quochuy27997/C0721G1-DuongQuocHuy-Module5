@@ -1,0 +1,78 @@
+<h1>Danh sách các xe đăng ký ở bến xe</h1>
+
+<a type="button" class="btn btn-primary btn-lg">Tạo mới </a>
+
+
+<table border="1" cellpadding="5" class="table table-striped">
+  <thead>
+  <tr>
+    <th>STT</th>
+    <th>Số xe</th>
+    <th>Loại xe</th>
+    <th>Tên nhà xe</th>
+    <th>Điểm đi</th>
+    <th>Điểm đến</th>
+    <th>Số điện thoai</th>
+    <th>Email</th>
+    <th>Giờ đi</th>
+    <th>Giờ đến</th>
+    <th>Edit</th>
+    <th>Delete</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let xe of xeList ; index as i">
+    <td>{{i + 1}}</td>
+    <td>{{xe.bienSoXe}}</td>
+    <td>{{xe.loaiXe}}</td>
+    <td>{{xe.nhaXe}}</td>
+    <td>{{xe.diemDi.name}}</td>
+    <td>{{xe.diemDen.name}}</td>
+    <td>{{xe.phone}}</td>
+    <td>{{xe.email}}</td>
+    <td>{{xe.gioDi}}</td>
+    <td>{{xe.gioDen}}</td>
+
+
+    <td><a type="button"
+           class="btn btn-primary btn-lg" routerLink="/xe/edit/{{xe.id}}">Edit</a>
+    </td>
+    <td>
+      <button type="button" class="btn btn-primary btn-lg"
+              data-toggle="modal" data-target="#modalDelete" (click)="getIdTemplate(xe.id)">
+        Delete
+      </button>
+    </td>
+  </tr>
+
+
+  </tbody>
+</table>
+
+
+<!-- Modal Delete -->
+<div class="modal fade" id="modalDelete" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
+     aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Are you want to delete ?
+      </div>
+      <div class="modal-footer">
+
+        <input type="hidden" id="idCustomer" name="id">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal" (click)="returnList()"
+                data-dismiss="modal">Close
+        </button>
+        <button type="submit" class="btn btn-primary" (click)="deleteXe()" data-dismiss="modal">Delete</button>
+
+      </div>
+    </div>
+  </div>
+</div>
